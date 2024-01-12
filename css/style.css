@@ -1,8 +1,85 @@
+@font-face {
+  font-style: normal;
+  font-weight: 500;
+  font-family: "Museo Sans Cyrl";
 
+  font-display: swap;
+  src: url("../fonts/museo-sans-cyrl-500.woff2") format("woff2");
+}
+
+@font-face {
+  font-style: normal;
+  font-weight: 700;
+  font-family: "Museo Sans Cyrl";
+
+  font-display: swap;
+  src: url("../fonts/museo-sans-cyrl-700.woff2") format("woff2");
+}
+
+@font-face {
+  font-style: normal;
+  font-weight: 900;
+  font-family: "Museo Sans Cyrl";
+
+  font-display: swap;
+  src: url("../fonts/museo-sans-cyrl-900.woff2") format("woff2");
+}
+
+:root {
+  --color-text:         #1a1a1a;
+  --color-background:   #ffffff;
+}
 *,
 *::before,
 *::after {
   box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.4;
+  font-family: "Museo Sans Cyrl", "Arial", sans-serif;
+  color: var(--color-text);
+
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+}
+
+body {
+  width: 100%;
+  min-width: 320px;
+  height: 100%;
+
+  background-color: var(--color-background);
+}
+
+a {
+  text-decoration: none;
+
+  transition: color 0.3s ease;
+}
+
+img,
+video {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+button,
+[type="button"],
+[type="reset"],
+[type="submit"] {
+  appearance: none;
 }
 
 .visually-hidden {
