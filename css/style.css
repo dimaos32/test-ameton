@@ -1,0 +1,58 @@
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+.visually-hidden {
+  position: absolute;
+
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+
+  white-space: nowrap;
+
+  border: 0;
+
+  clip: rect(0 0 0 0);
+  clip-path: inset(100%);
+}
+
+.container {
+  width: 100%;
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 40px;
+}
+
+
+@media (max-width: 991px) {
+  .container {
+    padding: 0 30px;
+  }
+}
+
+
+@media (max-width: 767px) {
+  .container {
+    padding: 0 20px;
+  }
+}
+
+
+@media (max-width: 575px) {
+  .container {
+    padding: 0 15px;
+  }
+}
+
+
+@media (max-width: 413px) {
+  .container {
+    padding: 0 10px;
+  }
+}
