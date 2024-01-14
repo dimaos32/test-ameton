@@ -1,70 +1,71 @@
 @font-face {
   font-style: normal;
   font-weight: 400;
-  font-family: 'Museo Sans Cyrl';
+  font-family: "Museo Sans Cyrl";
 
   font-display: swap;
-  src: url('../fonts/museo-sans-cyrl-500.woff2') format('woff2');
+  src: url("../fonts/museo-sans-cyrl-500.woff2") format("woff2");
 }
 
 @font-face {
   font-style: normal;
   font-weight: 600;
-  font-family: 'Museo Sans Cyrl';
+  font-family: "Museo Sans Cyrl";
 
   font-display: swap;
-  src: url('../fonts/museo-sans-cyrl-700.woff2') format('woff2');
+  src: url("../fonts/museo-sans-cyrl-700.woff2") format("woff2");
 }
 
 @font-face {
   font-style: normal;
   font-weight: 700;
-  font-family: 'Museo Sans Cyrl';
+  font-family: "Museo Sans Cyrl";
 
   font-display: swap;
-  src: url('../fonts/museo-sans-cyrl-900.woff2') format('woff2');
+  src: url("../fonts/museo-sans-cyrl-900.woff2") format("woff2");
 }
 
 :root {
-  --site-color-accent: #36ba5f;
-  --site-color-accent-action: #0b9034;
-  --site-color-text: #1a1a1a;
-  --site-color-background: #ffffff;
+  --site-color-accent:                     #36ba5f;
+  --site-color-accent-action:              #0b9034;
+  --site-color-text:                       #1a1a1a;
+  --site-color-background:                 #ffffff;
 
-  --site-block-color-background: var(--site-color-background);
-  --site-block-shadow: 0px 20px 60px 0px rgba(26, 26, 26, 0.05);
+  --site-block-color-background:           var(--site-color-background);
+  --site-block-shadow:                     0 20px 60px 0 rgba(26, 26, 26, 0.05);
 
-  --site-item-color-background: var(--site-color-background);
-  --site-item-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.05);
+  --site-item-color-background:            var(--site-color-background);
+  --site-item-shadow:                      0 0 30px 0 rgba(0, 0, 0, 0.05);
 
-  --btn-light-color-text: var(--site-color-text);
-  --btn-light-color-background: var(--site-color-background);
-  --btn-light-color-background-action: #eaeaea;
+  --btn-light-color-text:                  var(--site-color-text);
+  --btn-light-color-background:            var(--site-color-background);
+  --btn-light-color-background-action:     #eaeaea;
 
-  --hero-content-color-text: #ffffff;
-  --hero-content-color-background: #93bbea;
+  --hero-content-color-text:               #ffffff;
+  --hero-content-color-background:         #93bbea;
 
-  --social-list-btn-color-text: var(--site-color-accent);
-  --social-list-btn-color-background: #f9f9f9;
-  --social-list-btn-color-text-action: var(--site-color-accent-action);
+  --social-list-btn-color-text:            var(--site-color-accent);
+  --social-list-btn-color-background:      #f9f9f9;
+  --social-list-btn-color-text-action:     var(--site-color-accent-action);
 
-  --question-card-color-text: #949494;
-  --question-card-color-background: var(--site-color-background);
+  --question-card-color-text:              #949494;
+  --question-card-color-background:        var(--site-color-background);
 
-  --faq-btn-color-text: var(--site-color-text);
-  --faq-btn-color-text-action: var(--site-color-accent);
-  --faq-btn-color-background: var(--site-color-background);
-  --faq-btn-shadow: 0px 1px 7px rgba(0, 0, 0, 0.09);
-  --faq-btn-shadow-action: 0px 1px 7px rgba(54, 186, 95, 0.15);
+  --faq-btn-color-text:                    var(--site-color-text);
+  --faq-btn-color-text-action:             var(--site-color-accent);
+  --faq-btn-color-background:              var(--site-color-background);
+  --faq-btn-shadow:                        0 1px 7px rgba(0, 0, 0, 0.09);
+  --faq-btn-shadow-action:                 0 1px 7px rgba(54, 186, 95, 0.15);
 
-  --help-btn-color-text: var(--site-color-text);
-  --help-btn-color-background: var(--site-color-background);
-  --help-btn-shadow: var(--site-item-shadow);
-  --help-btn-shadow-action: 0px 0px 30px 0px rgba(54, 186, 95, 0.15);
+  --help-btn-color-text:                   var(--site-color-text);
+  --help-btn-color-background:             var(--site-color-background);
+  --help-btn-shadow:                       var(--site-item-shadow);
+  --help-btn-shadow-action:                0 0 30px 0 rgba(54, 186, 95, 0.15);
 
-  --help-question-descr-color-text: #949494;
-  --help-question-decor-color-text: #949494;
+  --help-question-descr-color-text:        #949494;
+  --help-question-decor-color-text:        #949494;
   --help-question-decor-color-text-action: var(--site-color-accent);
+
 
   --transition-default: 0.3s ease;
 }
@@ -86,7 +87,7 @@ html {
   font-weight: 400;
   font-size: 15px;
   line-height: 1.4;
-  font-family: 'Museo Sans Cyrl', 'Arial', sans-serif;
+  font-family: "Museo Sans Cyrl", "Arial", sans-serif;
   color: var(--site-color-text);
 
   -webkit-font-smoothing: antialiased;
@@ -145,11 +146,12 @@ video {
 }
 
 button,
-[type='button'],
-[type='reset'],
-[type='submit'] {
+[type="button"],
+[type="reset"],
+[type="submit"] {
   appearance: none;
 }
+
 
 .visually-hidden {
   position: absolute;
@@ -175,21 +177,23 @@ button,
   padding: 0 40px;
 }
 
-[data-accordion='element'].is-active > [data-accordion='content'] {
+
+[data-accordion="element"].is-active > [data-accordion="content"] {
   max-height: 100%;
 }
 
-[data-accordion='parent'].no-transition [data-accordion='content'] {
+[data-accordion="parent"].no-transition [data-accordion="content"] {
   -webkit-transition: none;
   transition: none;
 }
 
-[data-accordion='content'] {
+[data-accordion="content"] {
   max-height: 0;
   -webkit-transition: max-height 0.3s;
   transition: max-height 0.3s;
   overflow: hidden;
 }
+
 
 .btn {
   display: flex;
@@ -237,6 +241,7 @@ button,
   margin-left: 8px;
 }
 
+
 .hero {
   margin-top: 40px;
 }
@@ -248,10 +253,16 @@ button,
   color: var(--hero-content-color-text);
 
   background-color: var(--hero-content-color-background);
-  background-image: url('../img/airplanes.svg'), url('../img/phone-in-hand.svg');
+  background-image:
+    url("../img/airplanes.svg"),
+    url("../img/phone-in-hand.svg");
   background-repeat: no-repeat;
-  background-size: 263px 196px, 277px 226px;
-  background-position: left top 37px, right bottom;
+  background-size:
+    263px 196px,
+    277px 226px;
+  background-position:
+    left top 37px,
+    right bottom;
   border-radius: 40px;
 }
 
@@ -286,6 +297,7 @@ button,
 .hero__action-list {
   --cols: 4;
   --gap: 8px;
+
   display: flex;
   flex-wrap: wrap;
   width: calc(var(--cols) * 160px + var(--cols) * var(--gap));
@@ -301,6 +313,7 @@ button,
 .hero__action-item {
   padding: calc(var(--gap) / 2);
 }
+
 
 .social__content {
   display: flex;
@@ -377,7 +390,8 @@ button,
 
   overflow: hidden;
 
-  transition: color var(--transition-default),
+  transition:
+    color var(--transition-default),
     background-color var(--transition-default);
 }
 
@@ -386,6 +400,7 @@ button,
   color: var(--social-list-btn-color-text-action);
   background-color: var(--social-list-btn-color-background-action);
 }
+
 
 .faq__title {
   margin: 0;
@@ -435,7 +450,8 @@ button,
 
   cursor: pointer;
 
-  transition: color var(--transition-default),
+  transition:
+    color var(--transition-default),
     box-shadow var(--transition-default);
 }
 
@@ -453,6 +469,7 @@ button,
   color: var(--faq-btn-color-text-action);
   box-shadow: var(--faq-btn-shadow-action);
 }
+
 
 .question-card {
   display: flex;
@@ -496,6 +513,7 @@ button,
 
   margin-right: -16px;
 }
+
 
 .help__title {
   margin: 0;
@@ -556,7 +574,11 @@ button,
 }
 
 .help__question-title {
-  margin: 0;
+  display: block;
+
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 1.2;
 }
 
 .help__question-title:not(:last-child) {
@@ -564,7 +586,7 @@ button,
 }
 
 .help__question-descr {
-  margin: 0;
+  display: block;
 
   color: var(--help-question-descr-color-text);
 }
@@ -584,7 +606,8 @@ button,
 
   color: var(--help-question-decor-color-text);
 
-  transition: color var(--transition-default),
+  transition:
+    color var(--transition-default),
     transform var(--transition-default);
 }
 
@@ -605,14 +628,17 @@ button,
   margin: 0.33em 0;
 }
 
+
 @media (max-width: 991px) {
   .container {
     padding: 0 30px;
   }
 
+
   .hero__action-list {
     --cols: 2;
   }
+
 
   .social__content {
     flex-direction: column;
@@ -632,6 +658,7 @@ button,
     margin-bottom: 40px - calc(var(--gap) / 2);
   }
 
+
   .faq__inner {
     --margin: 30px;
   }
@@ -641,11 +668,8 @@ button,
   }
 }
 
-@media (max-width: 767px) {
-  .container {
-    padding: 0 20px;
-  }
 
+@media (max-width: 767px) {
   section {
     margin: 40px 0;
   }
@@ -659,6 +683,12 @@ button,
     font-size: 30px;
     line-height: 1.2;
   }
+
+
+  .container {
+    padding: 0 20px;
+  }
+
 
   .hero {
     margin-top: 20px;
@@ -683,10 +713,16 @@ button,
     margin-bottom: 20px - calc(var(--gap) / 2);
   }
 
+
   .social__content {
     padding: 20px;
 
     border-radius: 20px;
+  }
+
+
+  .faq__title:not(:last-child) {
+    margin-bottom: 20px;
   }
 
   .faq__inner {
@@ -696,6 +732,11 @@ button,
   .faq__item {
     width: 320px;
   }
+
+
+  .help__title:not(:last-child) {
+    margin-bottom: 20px;
+  }
 }
 
 @media (max-width: 575px) {
@@ -703,18 +744,22 @@ button,
     padding: 0 15px;
   }
 
+
   .hero__content {
     background-size: 132px 98px, 139px 113px;
   }
+
 
   .social-list {
     --cols: 3;
   }
 
+
   .faq__inner {
     --margin: 15px;
   }
 }
+
 
 @media (max-width: 413px) {
   html {
@@ -733,13 +778,16 @@ button,
     font-size: 18px;
   }
 
+
   .container {
     padding: 0 10px;
   }
 
+
   .hero__action-list {
     --cols: 1;
   }
+
 
   .faq__inner {
     --margin: 10px;
